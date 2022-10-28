@@ -1,1 +1,1 @@
-In this folder you can find the keyboard layout screenshots
+Изображения латинской и кириллической частей раскладки
