@@ -1,0 +1,22 @@
+{
+  "name": "Russian international, RU",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Russian international keyboard layout",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "input"
+  ],
+  "input_components": [
+    {
+      "name": "Russian international, RU",
+      "type": "ime",
+      "id": "ruintl_ru",
+      "description": "Russian international keyboard layout",
+      "language": "ru-ru",
+      "layouts": ["ru"]
+    }
+  ]
+}
