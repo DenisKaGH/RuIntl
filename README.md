@@ -1,2 +1,2 @@
 # RuIntl
-Russian international keyboard layout
+Русская международная раскладка
