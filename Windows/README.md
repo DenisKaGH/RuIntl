@@ -1,1 +1,1 @@
-To install the keyboard layout extract the archive files and run setup.exe
+Для установки раскладки под Windows необходимо распаковать архивы : RuIntl_E.zip (латиница) и RuIntl_E.zip (кириллица) и запустить файл setup.exe в каждом отдельном случае
