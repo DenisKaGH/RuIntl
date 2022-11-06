@@ -1,10 +1,10 @@
 /*
-Russian international keyboard layout, RU
+RuIntl cyrillic keyboard layout
 Based on the Russian standard keyboard layout
 The AltGr key to be used as the Compose key
 Denis Kaliberov <denis_kaliberov@mail.ru>
-Updated 2022-10-22
-Version 1.0
+Updated 2022-10-31
+Version 1.1
 */
 
 var contextID = 0;
@@ -20,7 +20,7 @@ var lut = {
     "Digit7"      : [ "7", "?", "&", "½" ],
     "Digit8"      : [ "8", "*", "~", "¾" ],
     "Digit9"      : [ "9", "(", "«", "±" ],
-    "Digit0"      : [ "0", ")", "»", "°" ],
+    "Digit0"      : [ "0", ")", "»", "™" ],
     "Minus"       : [ "-", "_", "¥", "₴" ],
     "Equal"       : [ "=", "+", "×", "÷" ],
     "KeyQ"        : [ "й", "Й", "", "" ],
