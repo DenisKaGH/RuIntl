@@ -1,10 +1,10 @@
 /*
-Russian international keyboard layout, EN
-Based on the Russian standard keyboard layout
+RuIntl latin keyboard layout
+Based on the English standard keyboard layout
 The AltGr key to be used as the Compose key
 Denis Kaliberov <denis_kaliberov@mail.ru>
-Updated 2022-10-28
-Version 1.0
+Updated 2022-10-31
+Version 1.1
 */
 
 var contextID = 0;
@@ -20,8 +20,8 @@ var lut = {
     "Digit7"          : [ "7", "?", "&", "½" ],
     "Digit8"          : [ "8", "*", "~", "¾" ],
     "Digit9"          : [ "9", "(", "«", "±" ],
-    "Digit0"          : [ "0", ")", "»", "dead_abovering" ],
-    "Minus"           : [ "-", "_", "¥", "dead_belowdot" ],
+    "Digit0"          : [ "0", ")", "»", "™" ],
+    "Minus"           : [ "-", "_", "¥", "dead_abovering" ],
     "Equal"           : [ "=", "+", "×", "÷" ],
     "KeyQ"            : [ "q", "Q", "ä", "Ä" ],
     "KeyW"            : [ "w", "W", "å", "Å" ],
@@ -76,8 +76,6 @@ var deadkeys = {
     "dead_macron"     : { "u": "ū", "U": "Ū", "y": "ȳ", "Y": "Ȳ", "o": "ō", "O": "Ō", "e": "ē", "E": "Ē", "a": "ā", "A": "Ā", "i": "ī", "I": "Ī", " ": "¯", },
     "dead_abovedot"   : { "y": "ẏ", "Y": "Ẏ", "o": "ȯ", "O": "Ȯ", "e": "ė", "E": "Ė", "a": "ȧ", "A": "Ȧ", "n": "ṅ", "N": "Ṅ", "i": "ı", "I": "İ", "w": "ẇ", "W": "Ẇ", " ": "˙",
                           "z": "ż", "Z": "Ż", "r": "ṙ", "R": "Ṙ", "m": "ṁ", "M": "Ṁ", "p": "ṗ", "P": "Ṗ", "s": "ṡ", "S": "Ṡ", "g": "ġ", "G": "Ġ", "c": "ċ", "C": "Ċ", },
-    "dead_belowdot"   : { "u": "ụ", "U": "Ụ", "y": "ỵ", "Y": "Ỵ", "o": "ọ", "O": "Ọ", "e": "ẹ", "E": "Ẹ", "a": "ạ", "A": "Ạ", "n": "ṇ", "N": "Ṇ", "i": "ị", "I": "Ị", "w": "ẉ", "W": "Ẉ", " ": ".",
-                          "z": "ẓ", "Z": "Ẓ", "r": "ṛ", "R": "Ṛ", "m": "ṃ", "M": "Ṃ", "s": "ṣ", "S": "Ṣ", "k": "ḳ", "K": "Ḳ", "l": "ḷ", "L": "Ḷ", },
     "dead_abovering"  : { "u": "ů", "U": "Ů", "y": "ẙ", "a": "å", "A": "Å", "w": "ẘ", " ": "°", },
     "dead_cedilla"    : { "c": "ç", "C": "Ç", "s": "ş", "S": "Ş", "t": "ţ", "T": "Ţ", " ": "¸", },
 };
