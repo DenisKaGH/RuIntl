@@ -1,8 +1,8 @@
 {
-  "name": "Russian international, EN",
-  "version": "1.0",
+  "name": "Russian (EN, intl., with dead keys)",
+  "version": "1.1",
   "manifest_version": 3,
-  "description": "Russian international keyboard layout",
+  "description": "RuIntl latin keyboard layout",
   "background": {
     "service_worker": "background.js"
   },
@@ -11,10 +11,10 @@
   ],
   "input_components": [
     {
-      "name": "Russian international, EN",
+      "name": "Russian (EN, intl., with dead keys)",
       "type": "ime",
       "id": "ruintl_en",
-      "description": "Russian international keyboard layout",
+      "description": "RuIntl latin keyboard layout",
       "language": "en-US",
       "layouts": ["us(intl)"]
     }
