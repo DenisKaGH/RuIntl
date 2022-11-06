@@ -1,8 +1,8 @@
 {
-  "name": "Russian international, RU",
-  "version": "1.0",
+  "name": "Russian (RU, international)",
+  "version": "1.1",
   "manifest_version": 3,
-  "description": "Russian international keyboard layout",
+  "description": "RuIntl cyrillic keyboard layout",
   "background": {
     "service_worker": "background.js"
   },
@@ -11,10 +11,10 @@
   ],
   "input_components": [
     {
-      "name": "Russian international, RU",
+      "name": "Russian (RU, international)",
       "type": "ime",
       "id": "ruintl_ru",
-      "description": "Russian international keyboard layout",
+      "description": "RuIntl cyrillic keyboard layout",
       "language": "ru-ru",
       "layouts": ["ru"]
     }
