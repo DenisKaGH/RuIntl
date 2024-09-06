@@ -3,13 +3,30 @@ RuIntl cyrillic keyboard layout
 Based on the Russian standard keyboard layout
 The AltGr key to be used as the Compose key
 Denis Kaliberov <denis_kaliberov@mail.ru>
-Updated 2022-10-31
-Version 1.1
+Updated 2024-09-05
+Version 1.2
 */
 
 var contextID = 0;
 
-var lut = {
+const keys = [
+    "Digit1",
+    "Digit2",
+    "Digit3",
+    "Digit4",
+    "Digit5",
+    "Digit6",
+    "Digit7",
+    "Digit8",
+    "Digit9",
+    "Digit0",
+    "Minus",
+    "Equal",
+    "Backslash",
+    "Slash"
+];
+
+const lut = {
     "Backquote"   : [ "ё", "Ё", "`", " ́" ],
     "Digit1"      : [ "1", "!", "₽", "¹" ],
     "Digit2"      : [ "2", "\"","@", "²" ],
@@ -23,25 +40,25 @@ var lut = {
     "Digit0"      : [ "0", ")", "»", "™" ],
     "Minus"       : [ "-", "_", "¥", "₴" ],
     "Equal"       : [ "=", "+", "×", "÷" ],
-    "KeyQ"        : [ "й", "Й", "", "" ],
+    "KeyQ"        : [ "й", "Й",  "",  "" ],
     "KeyW"        : [ "ц", "Ц", "џ", "Џ" ],
-    "KeyE"        : [ "у", "У", "", "" ],
+    "KeyE"        : [ "у", "У",  "",  "" ],
     "KeyR"        : [ "к", "К", "¶", "®" ],
     "KeyT"        : [ "е", "Е", "є", "Є" ],
     "KeyY"        : [ "н", "Н", "њ", "Њ" ],
     "KeyU"        : [ "г", "Г", "ґ", "Ґ" ],
     "KeyI"        : [ "ш", "Ш", "ї", "Ї" ],
     "KeyO"        : [ "щ", "Щ", "ў", "Ў" ],
-    "KeyP"        : [ "з", "З", "", "" ],
+    "KeyP"        : [ "з", "З",  "",  "" ],
     "BracketLeft" : [ "х", "Х", "{", "“" ],
     "BracketRight": [ "ъ", "Ъ", "}", "”" ],
     "Backslash"   : [ "/", "\\", "|", "¬" ],
-    "KeyA"        : [ "ф", "Ф", "", "" ],
+    "KeyA"        : [ "ф", "Ф",  "",  "" ],
     "KeyS"        : [ "ы", "Ы", "§", "§" ],
-    "KeyD"        : [ "в", "В", "", "" ],
-    "KeyF"        : [ "а", "А", "", "ª" ],
-    "KeyG"        : [ "п", "П", "Ω", "" ],
-    "KeyH"        : [ "р", "Р", "", "" ],
+    "KeyD"        : [ "в", "В",  "",  "" ],
+    "KeyF"        : [ "а", "А",  "", "ª" ],
+    "KeyG"        : [ "п", "П", "Ω",  "" ],
+    "KeyH"        : [ "р", "Р",  "",  "" ],
     "KeyJ"        : [ "о", "О", "j", "J" ],
     "KeyK"        : [ "л", "Л", "љ", "Љ" ],
     "KeyL"        : [ "д", "Д", "ђ", "Ђ" ],
@@ -52,7 +69,7 @@ var lut = {
     "KeyC"        : [ "с", "С", "¢", "©" ],
     "KeyV"        : [ "м", "М", "↓", "↑" ],
     "KeyB"        : [ "и", "И", "i", "I" ],
-    "KeyN"        : [ "т", "Т", "", "" ],
+    "KeyN"        : [ "т", "Т",  "",  "" ],
     "KeyM"        : [ "ь", "Ь", "µ", "º" ],
     "Comma"       : [ "б", "Б", "<", "←" ],
     "Period"      : [ "ю", "Ю", ">", "→" ],
@@ -85,9 +102,13 @@ chrome.input.ime.onKeyEvent.addListener(
       if (keyData.type == "keydown" && keyData.altKey == false && keyData.ctrlKey == false) {
 
           if (lut[keyData.code]) {
-          let modified = keyData.shiftKey ^ keyData.capsLock + 2 * altstate;
-          let emit = lut[keyData.code][modified];
-          altstate = false;
+            let modified = keyData.shiftKey ^ keyData.capsLock + 2 * altstate;
+            if (keys.includes(keyData.code)) {
+              modified = keyData.shiftKey + 2 * altstate;
+            }
+              
+            let emit = lut[keyData.code][modified];
+            altstate = false;
               
           if (emit != null && contextID != 0) {
             chrome.input.ime.commitText({
