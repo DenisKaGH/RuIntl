@@ -1,53 +1,53 @@
-# Описание
-Русская международная (RuIntl) - это набор кириллической и латинской раскладок унифицированных по составу и расположению знаков препинания и специальных символов.
+# Description
+The RuIntl Russian international is a set of Cyrillic and Latin layouts unified in composition and arrangement of the punctuation marks and special characters.
 
-Кириллическая раскладка позволяет набирать текст на следующих языках:
-- Русский;
-- Белорусский;
-- Болгарский;
-- Сербский;
-- Украинский.
+The Cyrillic layout allows you to type text in the following languages:
+- Russian;
+- Belarusian;
+- Bulgarian;
+- Serbian;
+- Ukrainian.
 
-Языки доступные на латинской раскладке:
-- Английский;
-- Венгерский;
-- Голландский;
-- Датский;
-- Испанский;
-- Итальянский;
-- Литовский;
-- Мальтийский;
-- Немецкий;
-- Польский;
-- Португальский;
-- Румынский;
-- Словацкий;
-- Словенский;
-- Турецкий;
-- Финский;
-- Французский;
-- Чешский;
-- Шведский;
-- Эстонский.
+Languages ​​available on the Latin layout:
+- English;
+- Hungarian;
+- Dutch;
+- Danish;
+- Spanish;
+- Italian;
+- Lithuanian;
+- Maltese;
+- German;
+- Polish;
+- Portuguese;
+- Romanian;
+- Slovak;
+- Slovenian;
+- Turkish;
+- Finnish;
+- French;
+- Czech;
+- Swedish;
+- Estonian.
 
-# Подробности
-- Буквы (кроме русских и английских), а так же специальные символы расположенные в правой части клавиш (см. изображения раскладок ниже) и выделенные голубым цветом (см. ниже фотографию наклеек на клавиатуру) набираются при нажатой клавише правого Alt (AltGr);
-- Для набора диакритических знаков на латинской раскладке используются «мёртвые клавиши» при нажатии на которые происходит выбор соответствующего диакритического знака для его применения к букве следующей нажатой клавиши. Если после «мёртвой клавиши» происходит нажатие на клавишу пробела, то на экран выводится изображение диакритического знака;
-- Раскладки разработаны для следующих операционных систем: ChromeOS, Linux и Windows;
-- Под Windows кириллическая раскладка доступна для выбора при установке Русского языка, а латинская - Английского.
+# Details
+- The letters (except the Russian and English ones), as well as the special characters located on the right side of the keys (see the layout images below) and highlighted in blue (see the photo of the keyboard stickers below) are typed while holding down the right Alt (AltGr) key;
+- To type a diacritics character on the Latin layout, "dead keys" are used; when pressed, the corresponding diacritic is selected for application to the letter of the next pressed key. If the space bar is pressed after the "dead key", a diacritic character will appear on the screen;
+- The layouts are designed for the following operating systems: ChromeOS, Linux and Windows;
+- Under Windows, the Cyrillic layout is available for selection when installing the Russian language, and the Latin layout is available for selection when installing the English one.
 
-**Изображение кириллической раскладки: Русская (международная, RU)**
+**Image of the Cyrillic layout: Russian (international, RU)**
 
-![Изображение кириллической раскладки](https://raw.githubusercontent.com/DenisKaGH/RuIntl/main/Screenshots/RuIntl_RU.png)
+![Image of the Cyrillic layout](https://raw.githubusercontent.com/DenisKaGH/RuIntl/main/Screenshots/RuIntl_RU.png)
 
-**Изображение латинской раскладки: Русская (международная, EN)**
+**Image of the Latin layout: Russian (international, EN)**
 
-![Изображение латинской раскладки](https://raw.githubusercontent.com/DenisKaGH/RuIntl/main/Screenshots/RuIntl_EN.png)
+![Image of the Latin layout](https://raw.githubusercontent.com/DenisKaGH/RuIntl/main/Screenshots/RuIntl_EN.png)
 
-**Фотография наклеек на клавиатуру**
+**The keyboard stickers photo**
 
-![Фотография наклеек на клавиатуру](https://raw.githubusercontent.com/DenisKaGH/RuIntl/main/Photos/Stickers.jpg)
+![The keyboard stickers photo](https://raw.githubusercontent.com/DenisKaGH/RuIntl/main/Photos/Stickers.jpg)
 
-# Участие в разработке
-Свои вопросы и предложения по улучшению набора раскладок Вы можете направлять по электронной почте по адресу: denis_kaliberov@mail.ru.
-Сообщения об ошибках и недочётах прошу размещать в разделе [Issues](https://github.com/DenisKaGH/RuIntl/issues).
+# Participation in development
+You can send your questions and suggestions for improving the RuIntl set of layouts by e-mail to: denis_kaliberov@mail.ru.
+Please post the messages about the errors and shortcomings in the [Issues](https://github.com/DenisKaGH/RuIntl/issues) section.
