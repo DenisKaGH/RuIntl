@@ -1,1 +1,1 @@
-Фотографии клавиатуры и наклеек
+The keyboard layout and stickers photos
