@@ -1,1 +1,1 @@
-Для установки раскладок под Windows необходимо скачать и распаковать архивы : RuIntl_E.zip (латиница) и RuIntl_R.zip (кириллица), а затем запустить файл setup.exe в каждом отдельном случае
+To install the keyboard layouts for Windows you need to download and unzip the archives: RuIntl_E.zip (Latin) and RuIntl_R.zip (Cyrillic) and then to run the setup.exe file in each individual case
