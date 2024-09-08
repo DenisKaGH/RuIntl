@@ -1,1 +1,1 @@
-Изображения латинской (EN) и кириллической (RU) раскладок
+The latin (EN) and cyrillic (RU) keyboard layout screenshots
