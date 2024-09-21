@@ -1,12 +1,12 @@
 // RuIntl cyrillic keyboard layout
 // Based on the Russian standard keyboard layout
 // Denis Kaliberov <denis_kaliberov@mail.ru>
-// Updated 2022-11-04
-// Version 1.1
+// Updated 2024-09-20
+// Version 1.2
 partial alphanumeric_keys
 xkb_symbols "ruintl_ru" {
 
-    name[Group1]= "Russian (RU, international)";
+    name[Group1]= "Russian (international, RU)";
 
     include "ru(common)"
 
@@ -61,12 +61,12 @@ xkb_symbols "ruintl_ru" {
 // RuIntl latin keyboard layout
 // Based on the English standard keyboard layout
 // Denis Kaliberov <denis_kaliberov@mail.ru>
-// Updated 2022-11-04
-// Version 1.1
+// Updated 2024-09-20
+// Version 1.2
 partial alphanumeric_keys
 xkb_symbols "ruintl_en" {
 
-    name[Group1]= "Russian (EN, intl., with dead keys)";
+    name[Group1]= "Russian (international, EN)";
 
     include "us(basic)"
 
