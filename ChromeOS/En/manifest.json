@@ -1,6 +1,6 @@
 {
   "name": "Russian (EN, intl., with dead keys)",
-  "version": "1.2",
+  "version": "1.3",
   "manifest_version": 3,
   "description": "RuIntl latin keyboard layout",
   "background": {
@@ -16,7 +16,7 @@
       "id": "ruintl_en",
       "description": "RuIntl latin keyboard layout",
       "language": "en-US",
-      "layouts": ["us(intl)"]
+      "layouts": ["us"]
     }
   ]
 }
